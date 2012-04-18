@@ -1,0 +1,49 @@
+frontend.sh
+===========
+
+Simple BASH script that creates a stub web frontend project using RequireJS and 
+jQuery. It uses cURL to download necessary files, so you will need to have cURL
+installed (most Linux distros do anyway).
+
+Features
+--------
+
+ + Creates complete directory strucutre for JavaScript, CSS and images.
+ + Downloads necessary JavaScript files and puts them in appropriate places
+ + Creates build config in `app.build`, that can be used with r.js optimizer
+ + Creates a makefile that can be used with GNU Make to build the project
+
+Basic usage
+-----------
+
+    frontend.sh DIRNAME
+
+`DIRNAME` is the name of the directory in which to create the project. Not that
+if the directory exists, the script _will not_ check for contentes, so you
+might get a mixed salad of files if you are not careful.
+
+To build the project once it's done, you can either use the app.build file, or
+you can use GNU make:
+
+    cd /path/to/project/files
+    make
+
+This creates a directory called 'build' in your project's parent directory (by
+default). You can configure that using the build config file.
+
+License
+-------
+
+Copyright (c)2012 by Monwara LLC / Branko Vukelic <branko@herdhound.com>
+All rights reserved.
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+See `COPYING` file for the full text of the license.

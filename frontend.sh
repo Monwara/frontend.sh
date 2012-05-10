@@ -75,15 +75,15 @@ then
 fi
 
 echo -n Creating stub index.html...
-echo '<!doctype html>
+echo -e "<!doctype html>
 <html>
   <head>
     <title>$page_title</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/require.js" data-main="js/boot"></script>
+    <link rel=\"stylesheet\" href=\"css/main.css\">
+    <script src=\"js/require.js\" data-main=\"js/boot\"></script>
   </head>
   <body></body>
-</html>' >> index.html
+</html>" >> index.html
 echo done
 
 echo Downloading files

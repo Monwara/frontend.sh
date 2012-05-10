@@ -2,7 +2,7 @@
 
 # Create a stub AMD-based frontend project with RequireJS and jQuery
 # 
-# Copyright (c)2012 by Monwara LLC / Banko Vukelic <branko@herdhound.com>
+# Copyright (c)2012 by Monwara LLC / Banko Vukelic <branko@monwara.com>
 # All rights reserved
 # v0.0.1
 #

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Create a stub AMD-based frontend project with RequireJS and jQuery
 # 

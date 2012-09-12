@@ -131,7 +131,11 @@ echo done
 
 echo -n Creating miscellaneous stub files...
 touch css/main.css
-touch js/boot.js
+echo -e "define(function(require) {
+  var $ = require('jquery');
+  
+  // Your code goes here
+});" >> js/boot.js
 if [ ! -e .gitignore ]
 then
     echo -e "*.swp\n*.swo\n*~\n" >> .gitignore
